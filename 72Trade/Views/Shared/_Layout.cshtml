@@ -1,0 +1,528 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title</title>
+    <!-- SEO Meta
+    ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="distribution" content="global">
+    <meta name="revisit-after" content="2 Days">
+    <meta name="robots" content="ALL">
+    <meta name="rating" content="8 YEARS">
+    <meta name="Language" content="en-us">
+    <meta http-equiv="reply-to" content="">
+    <meta name="GOOGLEBOT" content="NOARCHIVE">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS
+    ================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/content/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/content/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="~/content/css/style.css" />
+    <link rel='stylesheet' id='rs-plugin-settings-css' href="~/content/css/settings.css" type='text/css' media='all' />
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Favicons
+    ================================================== -->
+
+    <link rel="shortcut icon" href="~/content/images/favicon.ico">
+    <link rel="apple-touch-icon" href="~/content/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/content/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/content/images/apple-touch-icon-114x114.png">
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+    <!-- JS
+    ================================================== -->
+    <script type='text/javascript' src="~/content/js/jquery.min.js"></script>
+    <script type='text/javascript' src="~/content/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="~/content/js/jquery.themepunch.plugins.min.js"></script>
+    <script type='text/javascript' src="~/content/js/jquery.themepunch.revolution.min.js"></script>
+
+    <style type="text/css">
+        #rev_slider_1_1_wrapper .tp-loader.spinner2 {
+            background-color: #FFFFFF !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12">
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="index.html"><img src="~/content/images/logo.png" alt="logo"></a>
+                                    </div>
+                                    <div class="languages menu-item">
+                                        <a href="#"><img src="~/content/images/languages.jpg" alt=""></a>
+                                        <a href="#" class="arrow"><i class="fa fa-caret-down"></i></a>
+                                        <ul class="menu">
+                                            <li class="es-es">
+                                                <a title="Online Social Trading" data-lang="es" href="http://www.etoro.com/de/"><span class="flag es-es"></span><span class="country-name">Español</span></a>
+                                            </li>
+                                            <li class="de-de">
+                                                <a data-lang="de" href="#"><span title="online Devisenhandel" class="flag de-de"></span><span class="country-name">Deutsch</span></a>
+                                            </li>
+                                            <li class="fr-fr">
+                                                <a title="Online Social Trading" data-lang="fr" href="#"><span class="flag fr-fr"></span><span class="country-name">Français</span></a>
+                                            </li>
+                                            <li class="fi-fi">
+                                                <a title="Online Social Trading" data-lang="fi" href="#"><span class="flag fi-fi"></span><span class="country-name">Suomi</span></a>
+                                            </li>
+                                            <li class="it-it">
+                                                <a title="Online Social Trading" data-lang="it" href="#"><span class="flag it-it"></span><span class="country-name">Italiano</span></a>
+                                            </li>
+                                            <li class="hu-hu">
+                                                <a title="Online Social Trading" data-lang="hu" href="#"><span class="flag hu-hu"></span><span class="country-name">Magyar</span></a>
+                                            </li>
+                                            <li class="pl-pl">
+                                                <a title="Online Social Trading" data-lang="pl" href="#"><span class="flag pl-pl"></span><span class="country-name">Polski</span></a>
+                                            </li>
+                                            <li class="nn-no">
+                                                <a title="Online Social Trading" data-lang="no" href="#"><span class="flag nn-no"></span><span class="country-name">Norsk</span></a>
+                                            </li>
+                                            <li class="ru-ru">
+                                                <a title="Online Social Trading" data-lang="ru" href="#"><span class="flag ru-ru"></span><span class="country-name">Россия</span></a>
+                                            </li>
+                                            <li class="pt-br">
+                                                <a title="Online Social Trading" data-lang="pt" href="#"><span class="flag pt-br"></span><span class="country-name">Português</span></a>
+                                            </li>
+                                            <li class="zh-cn">
+                                                <a title="Online Social Trading" data-lang="cn" href="#"><span class="flag zh-cn"></span><span class="country-name">中国</span></a>
+                                            </li>
+                                            <li class="sv-se">
+                                                <a title="Online Social Trading" data-lang="se" href="#"><span class="flag sv-se"></span><span class="country-name">Svenska</span></a>
+                                            </li>
+                                            <li class="en-au">
+                                                <a title="Online Social Trading" href="#"><span class="flag en-au"></span><span class="country-name">Australia</span></a>
+                                            </li>
+                                            <li class="ar-ae">
+                                                <a title="Online Social Trading" data-lang="ae" href="#"><span class="flag ar-ae"></span><span class="country-name">العربية</span></a>
+                                            </li>
+                                            <li class="us-us">
+                                                <a title="Online Social Trading" href="#"><span class="flag us-us"></span><span class="country-name">USA</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1" style="height: auto;">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="social.html">Social</a>
+                                            </li>
+                                            <li>
+                                                <a href="market.html">Market</a>
+                                            </li>
+                                            <li>
+                                                <a href="trading.html">Trading</a>
+                                            </li>
+                                            <li class="mr0">
+                                                <a href="#">Education</a>
+                                            </li>
+                                            <li class="sign-up_1">
+                                                <a href="#"><span>Sign Up</span></a>
+                                            </li>
+                                            <li class="login login_1">
+                                                <a href="#" id="drop_down"><span>Login</span></a>
+                                                <div id="dropDown_box" class="login-box menu">
+                                                    <form id="login-form">
+                                                        <div class="row rUsername">
+                                                            <input type="text" value="" placeholder="Username" id="username" name="username" class="inputUsername">
+                                                        </div>
+                                                        <div class="row rPassword">
+                                                            <input type="password" value="" placeholder="Password" id="password" name="password" class="inputPassword">
+                                                        </div>
+                                                        <div class="submitRow">
+                                                            <button name="login-form" class="login-button">Sign in</button>
+                                                        </div>
+                                                        <a data-tracking-name="Password-Menu" class="forget-password" href="#">Forgot password?</a>
+                                                        <div class="clearFix"></div>
+                                                    </form>
+                                                    <div class="login-footer">
+                                                        <div class="introText">Don`t have an account?</div>
+                                                        <div class="fbButtonConteiner">
+                                                            <a rel="register" target="_blank" href="https://www.facebook.com/" class="social-network facebook offline register-by-facebook">
+                                                                <span class="social-network-logo"></span>
+                                                                <span class="social-network-caption">Sign up via Facebook</span>
+                                                            </a>
+                                                        </div>
+                                                        <div rel="register" class="footerEmailTxt register-by-email">No Facebook? <span>Sign up with your email</span></div>
+                                                    </div>
+                                                    <div class="limited">
+                                                        <div class="limitedTxt">We will NEVER publish without your permission</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="rightMenu">
+                                <ul>
+                                    <li class="languages menu-item">
+                                        <a href="#"><img src="~/content/images/languages.jpg" alt=""></a>
+                                        <a href="#" class="arrow"><i class="fa fa-caret-down"></i></a>
+                                        <ul class="menu">
+                                            <li class="es-es">
+                                                <a title="Online Social Trading" data-lang="es" href="http://www.etoro.com/de/"><span class="flag es-es"></span><span class="country-name">Español</span></a>
+                                            </li>
+                                            <li class="de-de">
+                                                <a data-lang="de" href="#"><span title="online Devisenhandel" class="flag de-de"></span><span class="country-name">Deutsch</span></a>
+                                            </li>
+                                            <li class="fr-fr">
+                                                <a title="Online Social Trading" data-lang="fr" href="#"><span class="flag fr-fr"></span><span class="country-name">Français</span></a>
+                                            </li>
+                                            <li class="fi-fi">
+                                                <a title="Online Social Trading" data-lang="fi" href="#"><span class="flag fi-fi"></span><span class="country-name">Suomi</span></a>
+                                            </li>
+                                            <li class="it-it">
+                                                <a title="Online Social Trading" data-lang="it" href="#"><span class="flag it-it"></span><span class="country-name">Italiano</span></a>
+                                            </li>
+                                            <li class="hu-hu">
+                                                <a title="Online Social Trading" data-lang="hu" href="#"><span class="flag hu-hu"></span><span class="country-name">Magyar</span></a>
+                                            </li>
+                                            <li class="pl-pl">
+                                                <a title="Online Social Trading" data-lang="pl" href="#"><span class="flag pl-pl"></span><span class="country-name">Polski</span></a>
+                                            </li>
+                                            <li class="nn-no">
+                                                <a title="Online Social Trading" data-lang="no" href="#"><span class="flag nn-no"></span><span class="country-name">Norsk</span></a>
+                                            </li>
+                                            <li class="ru-ru">
+                                                <a title="Online Social Trading" data-lang="ru" href="#"><span class="flag ru-ru"></span><span class="country-name">Россия</span></a>
+                                            </li>
+                                            <li class="pt-br">
+                                                <a title="Online Social Trading" data-lang="pt" href="#"><span class="flag pt-br"></span><span class="country-name">Português</span></a>
+                                            </li>
+                                            <li class="zh-cn">
+                                                <a title="Online Social Trading" data-lang="cn" href="#"><span class="flag zh-cn"></span><span class="country-name">中国</span></a>
+                                            </li>
+                                            <li class="sv-se">
+                                                <a title="Online Social Trading" data-lang="se" href="#"><span class="flag sv-se"></span><span class="country-name">Svenska</span></a>
+                                            </li>
+                                            <li class="en-au">
+                                                <a title="Online Social Trading" href="#"><span class="flag en-au"></span><span class="country-name">Australia</span></a>
+                                            </li>
+                                            <li class="ar-ae">
+                                                <a title="Online Social Trading" data-lang="ae" href="#"><span class="flag ar-ae"></span><span class="country-name">العربية</span></a>
+                                            </li>
+                                            <li class="us-us">
+                                                <a title="Online Social Trading" href="#"><span class="flag us-us"></span><span class="country-name">USA</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="login menu-item">
+                                        <a href="#"><span>Login</span></a>
+                                        <div class="login-box menu">
+                                            <form id="login-form">
+                                                <div class="row rUsername">
+                                                    <input type="text" value="" placeholder="Username" id="username" name="username" class="inputUsername">
+                                                </div>
+                                                <div class="row rPassword">
+                                                    <input type="password" value="" placeholder="Password" id="password" name="password" class="inputPassword">
+                                                </div>
+                                                <div class="submitRow">
+                                                    <button name="login-form" class="login-button">Sign in</button>
+                                                </div>
+                                                <a data-tracking-name="Password-Menu" class="forget-password" href="#">Forgot password?</a>
+                                                <div class="clearFix"></div>
+                                            </form>
+                                            <div class="login-footer">
+                                                <div class="introText">Don`t have an account?</div>
+                                                <div class="fbButtonConteiner">
+                                                    <a rel="register" target="_blank" href="https://www.facebook.com/" class="social-network facebook offline register-by-facebook">
+                                                        <span class="social-network-logo"></span>
+                                                        <span class="social-network-caption">Sign up via Facebook</span>
+                                                    </a>
+                                                </div>
+                                                <div rel="register" class="footerEmailTxt register-by-email">No Facebook? <span>Sign up with your email</span></div>
+                                            </div>
+                                            <div class="limited">
+                                                <div class="limitedTxt">We will NEVER publish without your permission</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sign-up menu-item">
+                                        <a href="#"><span>Sign Up</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- CONTAINER START -->
+        <section>
+            <div id="content">
+                @RenderSection("Slider", false)
+                @RenderSection("Features_1", false)
+                @RenderSection("Traders", false)
+                @RenderSection("Intro_1", false)
+                @RenderSection("User_Education", false)
+                @RenderSection("Partners", false)
+            </div>
+        </section>
+        <!-- CONTAINER END -->
+        @RenderBody()
+
+        <!--- footer Start -->
+        <footer>
+            <div id="footer">
+                <div class="footer_top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="menu_us">
+                                    <h4>Get to know us</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Welcome to Logo</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Legal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Careers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Logo  community</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="menu_us">
+                                    <h4>Start trading</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Fund your account</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Withdrawing fund</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fees</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">General Risk</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Disclosure</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Logo USA</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="logo_us">
+                                    <h4>Payment </h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><img src="~/content/images/logo_1.png" alt="logo" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="~/content/images/logo_2.png" alt="logo" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="~/content/images/logo_3.png" alt="logo" /></a>
+                                        </li>
+                                        <li class="logo_mr">
+                                            <a href="#"><img src="~/content/images/logo_4.png" alt="logo" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="~/content/images/logo_5.png" alt="logo" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="~/content/images/logo_6.png" alt="logo" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="~/content/images/logo_7.png" alt="logo" /></a>
+                                        </li>
+                                        <li class="logo_mr">
+                                            <a href="#"><img src="~/content/images/logo_8.png" alt="logo" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="~/content/images/logo_9.png" alt="logo" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="~/content/images/logo_10.png" alt="logo" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="~/content/images/logo_11.png" alt="logo" /></a>
+                                        </li>
+                                        <li class="logo_mr">
+                                            <a href="#"><img src="~/content/images/logo_12.png" alt="logo" /></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="social_icon">
+                                    <h4>Stay Connected</h4>
+                                    <ul>
+                                        <li class="fb"><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="li"><a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                                        <li class="sk"><a target="_blank" href="https://www.skype.com/"><i class="fa fa-skype"></i></i></a></li>
+                                        <li class="pi"><a target="_blank" href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></i></a></li>
+                                        <li class="tu"><a target="_blank" href="https://www.tumblr.com/"><i class="fa fa-tumblr"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <p>Copyright © 2014 Lorem ipsum.com, All rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--- footer END -->
+    </div>
+
+    @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+
+        var tpj = jQuery;
+        tpj.noConflict();
+        var revapi1;
+
+        tpj(document).ready(function () {
+
+            if (tpj('#rev_slider_1_1').revolution == undefined)
+                revslider_showDoubleJqueryError('#rev_slider_1_1');
+            else
+                revapi1 = tpj('#rev_slider_1_1').show().revolution(
+                 {
+                     dottedOverlay: "none",
+                     delay: 9000,
+                     startwidth: 1170,
+                     startheight: 500,
+                     hideThumbs: 200,
+
+                     thumbWidth: 100,
+                     thumbHeight: 50,
+                     thumbAmount: 3,
+
+                     navigationType: "none",
+                     navigationArrows: "solo",
+                     navigationStyle: "round",
+
+                     touchenabled: "on",
+                     onHoverStop: "on",
+
+                     swipe_velocity: 0.7,
+                     swipe_min_touches: 1,
+                     swipe_max_touches: 1,
+                     drag_block_vertical: false,
+
+                     keyboardNavigation: "off",
+
+                     navigationHAlign: "center",
+                     navigationVAlign: "bottom",
+                     navigationHOffset: 0,
+                     navigationVOffset: 20,
+
+                     soloArrowLeftHalign: "left",
+                     soloArrowLeftValign: "center",
+                     soloArrowLeftHOffset: 0,
+                     soloArrowLeftVOffset: 0,
+
+                     soloArrowRightHalign: "right",
+                     soloArrowRightValign: "center",
+                     soloArrowRightHOffset: 0,
+                     soloArrowRightVOffset: 0,
+
+                     shadow: 0,
+                     fullWidth: "on",
+                     fullScreen: "off",
+
+                     spinner: "spinner2",
+
+                     stopLoop: "off",
+                     stopAfterLoops: -1,
+                     stopAtSlide: -1,
+
+
+                     shuffle: "off",
+
+                     autoHeight: "off",
+                     forceFullWidth: "on",
+
+
+                     hideTimerBar: "on",
+                     hideThumbsOnMobile: "off",
+                     hideNavDelayOnMobile: 1500, hideBulletsOnMobile: "off",
+                     hideArrowsOnMobile: "off",
+                     hideThumbsUnderResolution: 0,
+
+                     hideSliderAtLimit: 0,
+                     hideCaptionAtLimit: 0,
+                     hideAllCaptionAtLilmit: 0,
+                     startWithSlide: 0,
+                     videoJsPath: "http://wordpress.tanshcreative.com/bulwark/wp-content/plugins/revslider/rs-plugin/videojs/",
+                     fullScreenOffsetContainer: ""
+                 });
+
+        });	//ready
+
+    </script>
+
+    <script>
+        tpj(document).ready(function () {
+            tpj('#drop_down').click(function () {
+                tpj('#dropDown_box').slideToggle(300);
+            });
+        });
+    </script>
+</body>
+</html>

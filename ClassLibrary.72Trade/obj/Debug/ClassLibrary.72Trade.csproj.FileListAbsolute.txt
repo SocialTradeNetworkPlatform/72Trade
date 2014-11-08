@@ -1,0 +1,10 @@
+C:\codebase\72Trade\ClassLibrary.72Trade\bin\Debug\ClassLibrary.72Trade.dll.config
+C:\codebase\72Trade\ClassLibrary.72Trade\bin\Debug\ClassLibrary.72Trade.dll
+C:\codebase\72Trade\ClassLibrary.72Trade\bin\Debug\ClassLibrary.72Trade.pdb
+C:\codebase\72Trade\ClassLibrary.72Trade\bin\Debug\Newtonsoft.Json.dll
+C:\codebase\72Trade\ClassLibrary.72Trade\bin\Debug\System.Net.Http.Formatting.dll
+C:\codebase\72Trade\ClassLibrary.72Trade\bin\Debug\WebApiContrib.Formatting.JavaScriptSerializer.dll
+C:\codebase\72Trade\ClassLibrary.72Trade\bin\Debug\Newtonsoft.Json.xml
+C:\codebase\72Trade\ClassLibrary.72Trade\bin\Debug\System.Net.Http.Formatting.xml
+C:\codebase\72Trade\ClassLibrary.72Trade\obj\Debug\ClassLibrary.72Trade.dll
+C:\codebase\72Trade\ClassLibrary.72Trade\obj\Debug\ClassLibrary.72Trade.pdb
